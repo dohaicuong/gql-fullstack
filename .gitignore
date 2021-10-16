@@ -6,5 +6,4 @@ dist-ssr
 **.lock
 
 # working
-frontend
 backend

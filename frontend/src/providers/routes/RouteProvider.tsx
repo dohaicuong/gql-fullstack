@@ -2,9 +2,9 @@ import { lazy } from 'react'
 
 import { useRoutes } from 'react-router-dom'
 
-const Home = lazy(() => import('./Home'))
-const A = lazy(() => import('./A'))
-const B = lazy(() => import('./B'))
+const Home = lazy(() => import('@/pages/Home'))
+const A = lazy(() => import('@/pages/A'))
+const B = lazy(() => import('@/pages/B'))
 
 const RouteProvider = () => {
   const element = useRoutes([

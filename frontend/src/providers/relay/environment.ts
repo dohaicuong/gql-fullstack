@@ -1,12 +1,14 @@
 import { Environment, Network, RecordSource, Store } from 'relay-runtime'
 
-const REACT_APP_API_ENDPOINT = 'http://localhost:4000/graphql'
-// const REACT_APP_SUBSCRIPTION_ENDPOINT = 'ws://localhost:4000/graphql'
+const {
+  VITE_API_ENDPOINT,
+  VITE_SUBSCRIPTION_ENDPOINT,
+} = import.meta.env
 
 const network = Network.create(async (params, variables) => {
   const jwt = localStorage.getItem('jwt')
 
-  return fetch(REACT_APP_API_ENDPOINT, {
+  return fetch(VITE_API_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

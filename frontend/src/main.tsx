@@ -3,9 +3,9 @@ import { Suspense } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import RelayProvider from './relay/RelayProvider'
-import ThemeProvider from '@/theme/ThemeProvider'
-import RouteProvider from '@/routes/RouteProvider'
+import RelayProvider from '@/providers/relay/RelayProvider'
+import ThemeProvider from '@/providers/theme/ThemeProvider'
+import RouteProvider from '@/providers/routes/RouteProvider'
 import { SnackbarProvider } from 'notistack'
 
 const rootElement = document.getElementById('root')
