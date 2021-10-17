@@ -20,6 +20,10 @@ const network = Network.create(async (params, variables) => {
     }),
   })
   .then(res => res.json())
+  .then(res => {
+    console.log(res)
+    return res
+  })
 })
 
 const store = new Store(new RecordSource())
