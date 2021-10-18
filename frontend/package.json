@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "relay": "relay-compiler"
+    "relay": "cp ../backend/schema.graphql ./schema.graphql && relay-compiler"
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
